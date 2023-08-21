@@ -118,6 +118,12 @@ nav ul li a {
     display: block;
   }
 
+  .nav-menu-item:hover {
+    background-color: rgba(244, 165, 96, 0.404);
+    transition: 0.8s;
+    scale: 1.1;
+  }
+
   .nav-menu-link:hover,
   .nav-menu-link_active {
     background: none;
