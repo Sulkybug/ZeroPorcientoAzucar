@@ -1,0 +1,137 @@
+.nav {
+  height: 70px;
+  margin: auto;
+  padding: 0px 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  z-index: 2000;
+}
+
+.nav-scroll-down {
+  background-color: #141414f5;
+  transition: 0.6s ease-in-out;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#logo {
+  height: 50px;
+  width: auto;
+  padding: 50px;
+  line-height: 80px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  margin: 0 20px;
+}
+
+.nav-menu-item {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 15px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 15px;
+}
+
+.nav-menu-link:hover {
+  width: 100%;
+  background: rgba(7, 14, 7, 0.671);
+  transition: 0.5;
+}
+
+.toggle {
+  color: lightsalmon;
+  background: none;
+  border: none;
+  font-size: 25px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+  cursor: pointer;
+}
+
+#salir {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 1440px) {
+  .nav-menu-item {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .nav {
+    height: 60px;
+  }
+
+  #logo {
+    width: auto;
+    height: 40px;
+    padding: 0.4rem;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: rgba(7, 14, 7, 0.925);
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 10px 0;
+    padding-bottom: 0;
+    padding-top: 0px;
+    height: calc(100%- 60px);
+    height: 100vh;
+    left: 100%;
+    transition: left 0.3s;
+    z-index: 800;
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
+    color: lightsalmon;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-right: none;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background: none;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  #salir {
+    visibility: visible;
+  }
+}

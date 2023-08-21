@@ -1,0 +1,171 @@
+.mainBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.formContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 50px 0px 50px;
+  margin-top: 0px;
+  height: 70%;
+  background: rgba(20, 18, 10, 0.445);
+  background-color: #1b1b1b9d;
+  width: 45%;
+  border-radius: 20px;
+  position: relative;
+  filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+}
+
+.formTitle {
+  font-family: 'Andika Basic', sans-serif;
+  font-weight: bolder;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000,
+    1px -1px 1px #000;
+}
+
+.formDescription {
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 950px;
+  width: 85%;
+}
+
+.form-group {
+  padding-bottom: 0.25rem;
+}
+
+textarea,
+select,
+.form-control {
+  margin: 8px 0 0 0;
+  width: 100%;
+  max-width: 748px;
+  height: auto;
+  background-color: rgba(255, 254, 254, 0.767);
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  color: #000000;
+  min-height: 1.9em;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 4px;
+  font-size: 15px;
+  font-weight: 800px;
+}
+
+select:active,
+select:hover {
+  outline-color: rgb(250, 162, 0);
+}
+
+option {
+  color: black;
+  background-color: #fff;
+}
+
+option:checked {
+  color: white;
+  background: rgb(21, 161, 2);
+  font-style: italic;
+  font-weight: bold;
+}
+
+fieldset {
+  width: 85%;
+  margin-inline-start: 100px;
+  margin-inline-end: 100px;
+  padding-top: 20px;
+  text-align: left;
+  border: none;
+}
+
+@media only screen and (max-width: 1600px) {
+  fieldset {
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+  }
+
+  .formTitle {
+    font-size: 18px;
+    padding: 0;
+    padding-top: 50px;
+  }
+
+  .formDescription {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    height: 100px;
+    width: 100%;
+  }
+
+  .fielset,
+  .formulario {
+    scale: 0.8;
+  }
+}
+
+@media only screen and (max-width: 920px), (max-height: 350px) {
+  .formContact {
+    width: 85%;
+    height: 60%;
+  }
+
+  fieldset {
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+    width: auto;
+  }
+
+  .form-group {
+    margin: 0 auto 0.5rem auto;
+    padding: 0.05rem;
+  }
+
+  .formulario {
+    font-size: 15px;
+    padding: 0;
+  }
+
+  textarea,
+  .form-control {
+    font-size: 15px;
+    min-height: 0.2em;
+  }
+
+  textarea {
+    height: 100px;
+    width: 350px;
+  }
+
+  .formTitle {
+    margin-top: 0px;
+    font-size: 18px;
+    padding: 0px;
+  }
+
+  .formDescription {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+}

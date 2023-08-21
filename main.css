@@ -1,0 +1,613 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+    margin: 0;
+  }
+}
+
+h1 {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 720px), (max-height: 740px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+html {
+  font-size: 20px;
+  color: whitesmoke;
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000,
+    1px -1px 1px #000;
+  font-family: 'Krumkake', 'Trebuchet MS', 'Lucida Sans Unicode',
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+body {
+  background-color: beige;
+  background-image: linear-gradient(
+      rgba(7, 14, 7, 0.884),
+      rgba(78, 50, 18, 0.411),
+      rgba(7, 14, 7, 0.884)
+    ),
+    url(img/DSC_0445.JPG);
+}
+
+footer,
+main,
+h1,
+header {
+  text-align: center;
+  margin: auto;
+}
+
+.welcome-section {
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(
+      rgba(7, 14, 7, 0.884),
+      rgba(90, 72, 40, 0.39)
+    ),
+    url(img/DSC_0443.JPG);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 720px), (max-height: 650px) {
+  .welcome-section {
+    background-attachment: local;
+    height: 49vh;
+    background-image: linear-gradient(
+        rgba(7, 14, 7, 0.884),
+        rgba(90, 72, 40, 0.486)
+      ),
+      url(img/vista-superior-galleta-chispas-chocolate-fondo-naranja.jpg);
+  }
+}
+
+.buttons {
+  position: fixed;
+  bottom: 400px;
+  left: 5px;
+  display: grid;
+  justify-content: left;
+  margin: auto;
+  align-items: center;
+  gap: 2%;
+  z-index: 200;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 26px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: rgba(7, 14, 7, 0.514);
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
+  transition: all 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 1700px) {
+  .buttons {
+    bottom: 100px;
+  }
+
+  .buttons a {
+    font-size: 24px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+  }
+}
+
+@media only screen and (max-height: 720px), (max-height: 650px) {
+  .buttons {
+    bottom: 350px;
+  }
+}
+
+@media only screen and (max-width: 720px), (max-height: 650px) {
+  .buttons a {
+    font-size: 16px;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+  }
+}
+.buttons a:hover {
+  transform: scale(1.1);
+}
+
+th,
+td,
+caption {
+  border: 1px solid #333;
+  font-family: 'Courier New', Courier, monospace;
+  border-collapse: separate;
+  padding: 0.5rem;
+}
+
+a {
+  color: aliceblue;
+}
+
+a:visited {
+  color: lightsalmon;
+}
+
+a:hover,
+a:active {
+  color: rgb(0, 172, 0);
+}
+
+#QuienesSomos {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+      rgba(7, 14, 7, 0.884),
+      rgba(78, 50, 18, 0.39) 95%,
+      #f5ab21c7 100%
+    ),
+    url(img/DSC_0002.JPG);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#parrafo1 {
+  height: auto;
+  width: 700px;
+  max-width: 100%;
+  z-index: 5;
+  color: white;
+  font-size: 20px;
+}
+
+#sugarFree {
+  width: 300px;
+  height: auto;
+  margin-bottom: 50px;
+  filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+}
+
+#Domicilios {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      rgba(7, 14, 7, 0.884),
+      rgba(78, 50, 18, 0.445),
+      rgba(7, 14, 7, 0.884)
+    ),
+    url(img/deliciosas-galletas-caseras-ralladura-naranja.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#rappi {
+  height: 470px;
+  width: auto;
+  border-radius: 20px;
+  filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+}
+
+#parrafo2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 470px;
+  width: 550px;
+  max-width: 100%;
+  z-index: 5;
+  color: white;
+  background-color: #272727c4;
+  padding: 0px 50px 0px 50px;
+  filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+  border-radius: 20px;
+}
+
+#contactanos {
+  height: 85vh;
+  background-image: linear-gradient(
+      rgba(7, 14, 7, 0.288),
+      rgba(78, 50, 18, 0.301),
+      rgba(7, 14, 7, 0.938)
+    ),
+    url(img/contactSectionImg.jpg);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+#parrafo3 {
+  background-color: #272727c4;
+  background-color: #19361cc4;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  z-index: 5;
+  color: white;
+  font-size: 20px;
+  padding: 20px 40px 20px 40px;
+  border-radius: 20px;
+  margin-left: 380px;
+  filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+}
+
+#messageImg {
+  width: 100px;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+}
+
+#messageImg:hover {
+  scale: 1.1;
+  transition: 0.5s;
+}
+
+#sugarFree:hover {
+  transform: rotate(360deg);
+  transition: 0.7s ease-in-out;
+}
+
+@media only screen and (max-width: 1700px) {
+  #parrafo1 {
+    width: 800px;
+    top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 17px;
+  }
+
+  #sugarFree {
+    width: 150px;
+  }
+
+  #rappi {
+    height: 400px;
+    width: auto;
+  }
+
+  #parrafo2 {
+    height: 400px;
+    width: 400px;
+    top: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+
+  #parrafo3 {
+    width: 420px;
+    font-size: 15px;
+    height: 70%;
+    margin-left: 200px;
+  }
+}
+
+@media only screen and (max-width: 740px), (max-height: 650px) {
+  #sugarFree {
+    width: 150px;
+    height: auto;
+  }
+
+  #parrafo1 {
+    width: 290px;
+    top: 0px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    font-size: 18px;
+  }
+
+  #Domicilios {
+    flex-direction: column;
+  }
+
+  #rappi {
+    height: auto;
+    width: 290px;
+  }
+
+  #parrafo2 {
+    width: 250px;
+    padding: 40px 20px 40px 20px;
+    font-size: 18px;
+    height: 340px;
+  }
+
+  #contactanos {
+    background-size: cover;
+    background-position: initial;
+  }
+
+  #parrafo3 {
+    height: 50%;
+    width: 210px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    font-size: 18px;
+    margin: auto;
+  }
+
+  #messageImg {
+    width: 70px;
+  }
+}
+
+.justify {
+  text-align: justify;
+}
+
+.submit:hover,
+.reset:hover {
+  animation-name: background-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes background-color {
+  100% {
+    background-color: lightsalmon;
+    color: black;
+  }
+}
+
+#LogoWelcome {
+  max-width: 450px;
+  height: 450px;
+  filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+}
+
+.caja {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subtito {
+  font-style: italic;
+  color: lightsalmon;
+  font-size: 28px;
+  font-family: 'Andika Basic', sans-serif;
+  font-weight: bolder;
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000,
+    1px -1px 1px #000;
+  filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+  top: -90px;
+  position: relative;
+  width: 450px;
+}
+
+.titleSection {
+  font-family: 'Andika Basic', sans-serif;
+  font-weight: bolder;
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000,
+    1px -1px 1px #000;
+}
+
+@media only screen and (max-width: 1440px) {
+  #LogoWelcome {
+    max-width: 400px;
+    height: 400px;
+  }
+
+  .subtito {
+    font-size: 25px;
+  }
+  .caja {
+    bottom: 100px;
+  }
+}
+
+@media only screen and (max-height: 350px) {
+  .caja {
+    bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 720px), (max-height: 650px) {
+  #LogoWelcome {
+    width: 200px;
+    height: 200px;
+  }
+
+  .subtito {
+    width: 70%;
+    top: -40px;
+    right: 0px;
+    font-size: 14px;
+    font-family: 'Andika Basic', sans-serif;
+  }
+
+  .caja {
+    bottom: 140px;
+  }
+
+  footer {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-height: 526px) {
+  .caja {
+    position: relative;
+    display: inline-block;
+    bottom: 200px;
+  }
+}
+
+.button-24 {
+  background: rgb(253, 120, 67);
+  border: 1px solid lightsalmon;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000,
+    1px -1px 1px #000;
+  filter: drop-shadow(5px 8px 5px rgb(0, 0, 0));
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  transition: all 0.4s ease-in-out;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: rgb(0, 172, 0);
+  background-position: 0 0;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.button-24:active {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 1440px) {
+  .button-24 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+
+h2,
+h1 {
+  color: lightsalmon;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+mark {
+  background-color: rgb(0, 172, 0);
+  color: #ffffff;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 15vh;
+  background-color: rgba(0, 0, 0, 0.233);
+}
+
+.ir-abajo {
+  position: absolute;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 40px;
+  cursor: pointer;
+  bottom: 20px;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.icon-circle-down {
+  right: 49%;
+}
+
+.ir-abajo:hover,
+.ir-abajo :active {
+  color: rgb(0, 172, 0);
+  transform: scale(1.1);
+}
+
+.ir-ubicacion {
+  position: absolute;
+  display: inline-block;
+  color: lightsalmon;
+  font-size: 35px;
+  cursor: pointer;
+  bottom: 20px;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.icon-location2 {
+  right: 1%;
+}
+
+.ir-ubicacion:hover,
+.ir-ubicacion :active {
+  color: rgb(0, 172, 0);
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 720px), (max-height: 650px) {
+  .button-24 {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    min-height: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .icon-circle-down {
+    visibility: hidden;
+  }
+
+  .ir-ubicacion {
+    bottom: 335px;
+    font-size: 25px;
+  }
+  .icon-location2 {
+    right: 3%;
+  }
+}
+
+strong {
+  color: lightsalmon;
+}
+
+.block {
+  display: block;
+}
+
+.invalid {
+  color: red;
+}
